@@ -1,0 +1,26 @@
+{
+  "name": "meizu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jquery-3.2.1.js",
+  "dependencies": {
+    "grunt": "^1.0.2"
+  },
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-spritesmith": "^6.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jihaong/meizu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jihaong/meizu/issues"
+  },
+  "homepage": "https://github.com/jihaong/meizu#readme"
+}

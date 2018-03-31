@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>悦读-悦读FM</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="css/index.css" rel="stylesheet">
+    <script type="text/javascript" src="../jquery-3.2.1.js"></script>
+    <script>
+        $(function(){
+            $('#register').on('click',function(){
+                $('.denglu').fadeIn(1000);
+                $('.login-box').animate({left:'+50%'}, 1000);
+            });
+            $('.close1').on('click',function(){
+                $('.login-box').animate({
+                    left:'150%'}, 1000,function(){
+                        $('.login-box').css('left','-40%');
+                    });
+                $('.denglu').fadeOut(1000);
+            });
+            $('#zhuce').on('click',function(){
+                $('.enroll').fadeIn(1000);
+                $('.enroll-box').animate({left:'+50%'}, 1000);
+            });
+            $('.close2').on('click',function(){
+                $('.enroll-box').animate({
+                    left:'150%'}, 1000,function(){
+                    $('.enroll-box').css('left','-40%');
+                });
+                $('.enroll').fadeOut(1000);
+            });
+            
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+    	<div class="head">
+    		<div class="head-box">
+    			<div class="logo">
+    				<a href="eg.html">
+    					<span id="s1"></span>
+    					<span id="s2"></span>
+    					<span id="s3"></span>
+    					悦读 FM
+    				</a>
+    			</div>
+    			<ul>
+    				<li><a href="#" style="color: #ee5044">悦读</a></li>
+    				<li><a href="emotion.html">情感</a></li>
+    				<li><a href="lianbo.html">连播</a></li>
+    				<li><a href="school.html">校园</a></li>
+    				<li><a href="music.html">音乐</a></li>
+    				<li><a href="Labss.html">Labs</a></li>
+    			</ul>
+    			<div class="search">
+    				<input type="text">
+    			</div>
+    			<span class="dotted"></span>
+    			<div class="login">
+    				<a href="#" id="register">登录</a>
+    				<a href="#" id="zhuce">注册</a>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="denglu">
+    		<div class="login-box">
+    			<div class="login-content">
+    				<h3>登录</h3>
+    				<div class="input">
+    					<input type="text" id="top1" placeholder="邮箱">
+    					<input type="password" placeholder="密码">
+    				</div>
+    				<div class="mima">
+    					<input type="radio" name="">下次自动登录
+    					<a href="#">忘记密码</a>
+    				</div>
+    				<div class="enter">登录</div>
+    			</div>
+    			<span class="close1">X</span>
+    		</div>
+    	</div>
+    	<div class="enroll">
+    		<div class="enroll-box">
+    			<div class="enroll-content">
+    				<h3>注册</h3>
+    				<div class="passIn">
+    					<input type="text" placeholder="昵称">
+    					<input type="text" placeholder="邮箱">
+    					<input type="password" placeholder="密码">
+    					<input type="password" placeholder="确认密码">
+    				</div>
+    				<div class="protocol">
+    					<input type="radio" name="">
+    					我已认真阅读并同意悦读FM的
+    					<a href="#">《使用协议》</a>
+    				</div>
+    				<div class="sign">注册</div>
+    			</div>
+    			<span class="close2">X</span>
+    		</div>
+    	</div>
+    	<!-- <script type="text/javascript">
+    		var dl=document.getElementById('register');
+    		var zc=document.getElementById('zhuce');
+    		var div=document.getElementsByClassName('denglu')[0];
+    		var box=document.getElementsByClassName('enroll')[0];
+    		
+    		var Close=document.getElementsByClassName('close');
+    		dl.onclick=function () {
+    			div.style='display:block';
+    			// small.style='show('400')';
+    		}
+    		Close[0].onclick=function(){
+    			div.style='display:none';
+    		}
+    		zc.onclick=function () {
+    			box.style='display:block';
+    			// small.style='show('400')';
+    		}
+    		Close[1].onclick=function(){
+    			box.style='display:none';
+    		}
+    	</script> -->
+    	<div class="content">
+    		<div class="content-box">
+    			<div class="content-left">
+    				<div class="main">
+    					<img src="images/main1_03.png" alt="">
+    					<div class="words">
+    						<a href="#">
+    							<h3>爱因斯坦的梦——他羡慕活在自己时间里的人</h3>
+    						</a>
+    						<div class="others">
+    							<span><img src="images/others1_06.png" alt="">   艾伦.莱特曼
+    							</span>
+    							<span>
+    								<img src="images/others2_06.png" alt="">  微微
+    							</span>
+    							<span>
+    								<img src="images/others3_12.png" alt="">  9:35
+    							</span>
+    							<span>
+    								<img src="images/others4_14.png" alt="">   3734次
+    							</span>
+    						</div>
+    						<p>他羡慕活在自己时间里的人，他们无视于未来，无知与后果，所以可以单凭己意行事...</p>
+    					</div>
+    				</div>
+    				<div class="main">
+    					<img src="images/main2_06.png" alt="">
+    					<div class="words">
+    						<a href="#">
+    							<h3>爱因斯坦的梦——时间是一个圆圈</h3>
+    						</a>
+    						<div class="others">
+    							<span><img src="images/others1_06.png" alt="">   艾伦.莱特曼
+    							</span>
+    							<span>
+    								<img src="images/others2_06.png" alt="">  微微
+    							</span>
+    							<span>
+    								<img src="images/others3_12.png" alt="">  8:14
+    							</span>
+    							<span>
+    								<img src="images/others4_14.png" alt="">   3734次
+    							</span>
+    						</div>
+    						<p>设想时间是一个圆圈，弯转过来首尾相接。世界重复着自己，无休无止，不差毫厘...</p>
+    					</div>
+    				</div>
+    				<div class="main">
+    					<img src="images/main3_08.png" alt="">
+    					<div class="words">
+    						<a href="#">
+    							<h3>醒来觉得甚是爱你</h3>
+    						</a>
+    						<div class="others">
+    							<span><img src="images/others1_06.png" alt="">   朱生豪
+    							</span>
+    							<span>
+    								<img src="images/others2_06.png" alt="">  宁二
+    							</span>
+    							<span>
+    								<img src="images/others3_12.png" alt="">  5:59
+    							</span>
+    							<span>
+    								<img src="images/others4_14.png" alt="">   3734次
+    							</span>
+    						</div>
+    						<p>你也许不会相信，我常常想象你是多么美好，多么可爱，但实际见了你面的时候，你比我想象的要美好的多，可爱的多...</p>
+    					</div>
+    				</div>
+    				<div class="main">
+    					<img src="images/main4_03.png" alt="">
+    					<div class="words">
+    						<a href="#">
+    							<h3>每四年，你会遇到一个真心喜欢的人</h3>
+    						</a>
+    						<div class="others">
+    							<span><img src="images/others1_06.png" alt="">   鳗鲸
+    							</span>
+    							<span>
+    								<img src="images/others2_06.png" alt="">  丢丢
+    							</span>
+    							<span>
+    								<img src="images/others3_12.png" alt="">  13:07
+    							</span>
+    							<span>
+    								<img src="images/others4_14.png" alt="">   3734次
+    							</span>
+    						</div>
+    						<p>真正喜欢一个人的时候，你并不希望他改变自己来迎合你，你只会想要不断改变自己，去适合他，就像杨千嬅唱的，“怕你变了，寻遍世上，再无人像你”...</p>
+    					</div>
+    				</div>
+    				<div class="main">
+    					<img src="images/main5_06.png" alt="">
+    					<div class="words">
+    						<a href="#">
+    							<h3>一个人的生活并不容易，但一定会过去</h3>
+    						</a>
+    						<div class="others">
+    							<span><img src="images/others1_06.png" alt="">   子玉
+    							</span>
+    							<span>
+    								<img src="images/others2_06.png" alt="">  小彬FM
+    							</span>
+    							<span>
+    								<img src="images/others3_12.png" alt="">  11:48
+    							</span>
+    							<span>
+    								<img src="images/others4_14.png" alt="">   3734次
+    							</span>
+    						</div>
+    						<p>我们所生活的这座偌大的城市从不缺少为它而来的年轻人，也不缺少像我一样孤单却还是在拼搏的生命...</p>
+    					</div>
+    				</div>
+    				<div class="main">
+    					<img src="images/main6_08.png" alt="">
+    					<div class="words">
+    						<a href="#">
+    							<h3>我知道有一个地方，那里一个人也没有</h3>
+    						</a>
+    						<div class="others">
+    							<span><img src="images/others1_06.png" alt="">   李娟
+    							</span>
+    							<span>
+    								<img src="images/others2_06.png" alt="">  微微
+    							</span>
+    							<span>
+    								<img src="images/others3_12.png" alt="">  6:07
+    							</span>
+    							<span>
+    								<img src="images/others4_14.png" alt="">   3734次
+    							</span>
+    						</div>
+    						<p>我知道有一个地方有一条河，最终流向北方。我知道北方，还知道北方全部的夏天。那么短暂...</p>
+    					</div>
+    				</div>
+    				<div class="main">
+    					<img src="images/main7_03.png" alt="">
+    					<div class="words">
+    						<a href="#">
+    							<h3>中秋</h3>
+    						</a>
+    						<div class="others">
+    							<span><img src="images/others1_06.png" alt="">   燕仰
+    							</span>
+    							<span>
+    								<img src="images/others2_06.png" alt="">  羊小羔
+    							</span>
+    							<span>
+    								<img src="images/others3_12.png" alt="">  13:35
+    							</span>
+    							<span>
+    								<img src="images/others4_14.png" alt="">   3734次
+    							</span>
+    						</div>
+    						<p>夏历八月十五日，正是「三秋恰半」，故名中秋。宋朝时的中秋节有赏月、赏桂、观潮、赏灯、吃月饼、饮酒赋诗等习俗。宋太宗时把中秋与新年、端午列为三大节日...</p>
+    					</div>
+    				</div>
+    				<div class="main">
+    					<img src="images/main8_06.png" alt="">
+    					<div class="words">
+    						<a href="#">
+    							<h3>礼物</h3>
+    						</a>
+    						<div class="others">
+    							<span><img src="images/others1_06.png" alt="">   有鹿
+    							</span>
+    							<span>
+    								<img src="images/others2_06.png" alt="">  甘乐
+    							</span>
+    							<span>
+    								<img src="images/others3_12.png" alt="">  31:24
+    							</span>
+    							<span>
+    								<img src="images/others4_14.png" alt="">   3734次
+    							</span>
+    						</div>
+    						<p>时光像连绵大雨一般一一剥去他在少年时代赠予我的辰光和只言片语，这些琐碎的物件在后来我颠沛的生活里再也无迹可寻...</p>
+    					</div>
+    				</div>
+    				<div class="main">
+    					<img src="images/main9_08.png" alt="">
+    					<div class="words">
+    						<a href="#">
+    							<h3>故都长安</h3>
+    						</a>
+    						<div class="others">
+    							<span><img src="images/others1_06.png" alt="">   沈韶君
+    							</span>
+    							<span>
+    								<img src="images/others2_06.png" alt="">  一泓
+    							</span>
+    							<span>
+    								<img src="images/others3_12.png" alt="">  6:32
+    							</span>
+    							<span>
+    								<img src="images/others4_14.png" alt="">   3734次
+    							</span>
+    						</div>
+    						<p>凡我住过的地方都是故乡...</p>
+    					</div>
+    				</div>
+    				<div class="main">
+    					<img src="images/main10_03.png" alt="">
+    					<div class="words">
+    						<a href="#">
+    							<h3>一曲云水释禅心</h3>
+    						</a>
+    						<div class="others">
+    							<span><img src="images/others1_06.png" alt="">   白落梅
+    							</span>
+    							<span>
+    								<img src="images/others2_06.png" alt="">  雨夜书简
+    							</span>
+    							<span>
+    								<img src="images/others3_12.png" alt="">  13:35
+    							</span>
+    							<span>
+    								<img src="images/others4_14.png" alt="">   3734次
+    							</span>
+    						</div>
+    						<p>落无言，流水不语。在清明简净的日子里，当淡了心性，坐幽篁阵里，品潋滟茶汤...</p>
+    					</div>
+    				</div>
+    				<div class="pages">
+    					<span>1</span>
+    					<span>2</span>
+    					<span>3</span>
+    					<span>4</span>
+    					<span>5</span>
+    					<span>6</span>
+    					<span>7</span>
+    					<span>8</span>
+    					<span>下一页</span>
+    				</div>
+    			</div>
+    			<div class="content-right">
+    				<div class="side-pic">
+    					<img src="images/left1.jpg" alt="">
+    				</div>
+    				<div class="side-main">
+    					<h4>悦读频道&nbsp;TOP10</h4>
+    					<ul>
+    						<li>
+    							<a href="#">越努力，越幸运</a>
+    							<p><span>文：卢思浩</span>
+    								<span>主播：迁延</span>
+    							</p>
+    						</li>
+    						<li>
+    							<a href="#">你若安好便是晴天（完结）
+    							</a>
+    							<p><span>文：白落梅</span>
+    								<span>主播：雲襲</span>
+    							</p>
+    						</li>
+    						<li>
+    							<a href="#">我想喜欢你，如此而已</a>
+    							<p><span>文：没头脑也很高兴</span>
+    								<span>主播：不系之舟</span>
+    							</p>
+    						</li>
+    						<li>
+    							<a href="#">也许，我们再也遇不到自己想象中的那个人了</a>
+    							<p><span>文：安妮宝贝</span>
+    								<span>主播：不系之舟</span>
+    							</p>
+    						</li>
+    						<li>
+    							<a href="#">我希望有个如你一般的人</a>
+    							<p><span>文：张嘉佳</span>
+    								<span>主播：墨菲</span>
+    							</p>
+    						</li>
+    						<li>
+    							<a href="#">假如还有来生</a>
+    							<p><span>文：三毛</span>
+    								<span>主播：雲襲</span>
+    							</p>
+    						</li>
+    						<li>
+    							<a href="#">最美的徒劳无功</a>
+    							<p><span>文：九把刀</span>
+    								<span>主播：雲襲</span>
+    							</p>
+    						</li>
+    						<li>
+    							<a href="#">最怕的是你永远也忘不掉</a>
+    							<p><span>文：顾明烟</span>
+    								<span>主播：丢丢</span>
+    							</p>
+    						</li>
+    						<li>
+    							<a href="#">致前任男友&未来丈夫的信</a>
+    							<p><span>文：暖小团</span>
+    								<span>主播：左小乐</span>
+    							</p>
+    						</li>
+    						<li>
+    							<a href="#">我们为什么没能好好在一起</a>
+    							<p><span>文：作业本</span>
+    								<span>主播：文涛</span>
+    							</p>
+    						</li>
+    					</ul>
+    				</div>
+    				<div class="side-pic">
+    					<img src="images/left2.jpg" alt="" width="360" height="245">
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="footer">
+    		<div class="footer-box">
+    			<div class="copyright">
+    				<a href="">关于我们</a>
+    				<span></span>
+    				<a href="">加入我们</a>
+    				<p>© 2010-2016 Yuedu.fm All rights reserved   粤ICP备14076392号</p>
+    			</div>
+    			<div class="contact">
+    				<div class="app jz">
+    					<img src="images/footer1_03.png" alt="">
+    					<div class="juanzhu">
+    						<img src="images/juanzhu.jpg" alt="" width="150" height="150">
+    					</div>
+    				</div>
+    				<div class="app vx">
+    					<img src="images/footer2_05.png" alt="">
+    					<div class="weixin">
+    						<img src="images/weixin.jpg" alt="" width="150" height="150">
+    					</div>
+    				</div>
+    				<div class="app">
+    					<img src="images/footer3_07.png" alt="">
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+</body>
+</html>

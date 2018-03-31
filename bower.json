@@ -1,0 +1,20 @@
+{
+  "name": "MEIZU",
+  "homepage": "https://github.com/jihaong/meizu",
+  "authors": [
+    "jihaong <1622520390@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
